@@ -6,6 +6,12 @@ oracledb.autoCommit = true;
 oracledb.outFormat = oracledb.OBJECT;
 oracledb.fetchAsBuffer = [oracledb.BLOB];
 
+console.log(process.platform);
+console.log(process.version);
+console.log(process.arch);
+console.log(oracledb.versionString);
+console.log(oracledb.oracleClientVersionString);
+
 async function run() {
   let connection;
 
